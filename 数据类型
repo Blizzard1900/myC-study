@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+/*******************************
+*整形
+*short（2bt）
+* int（4）
+* long（4）
+* long long（8）
+* sizeof关键字   求占用内存大小sizeof(int)(当然也可以是其他的）
+*浮点型
+* float
+* double
+* 
+******************************/
+
+int main()
+{
+	short a = 32768;
+	int   b = 32768;
+	//注意调试后的取值
+	cout << "a=" << a << endl;
+	cout << "b=" << b << endl;
+
+
+
+
+
+
+
+
+	system("pause");//VS系统已经设置过了可以不用
+	return 0;
+
+}
