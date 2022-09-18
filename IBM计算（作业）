@@ -3,14 +3,11 @@ using namespace std;
 
 int main()
 {
-	float c, x, k;//单精度
+float c, x, k;//单精度
 	
 	cout << "请输入你的身高(m)，体重(kg)，和年龄(Y)并用空格隔开" << endl;
 	cin >> c >> x >> k;
 	float p = x/(c * c);
 	cout << "你的IBM值为：" << p << endl;
-	return 0;
-
-
-
+return 0;
 }
