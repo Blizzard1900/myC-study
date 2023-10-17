@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <ctype.h>
+
+int main() {
+    char input_letter;
+    printf("输入一个大写字母: ");
+    scanf(" %c", &input_letter);
+
+    // 使用tolower函数将大写字母转换为小写字母
+    char output_letter = tolower(input_letter);
+
+    printf("对应的小写字母: %c\n", output_letter);
+
+    return 0;
+}
+/****************************************
+*#include <iostream>
+*#include <cctype>
+*
+*int main() {
+*    char input_letter;
+*    std::cout << "输入一个大写字母: ";
+*    std::cin >> input_letter;
+*
+*    // 使用tolower函数将大写字母转换为小写字母
+*    char output_letter = std::tolower(input_letter);
+*
+*    std::cout << "对应的小写字母: " << output_letter << std::endl;
+*
+*    return 0;
+*}
+*
+*
+
+*****************************************/
