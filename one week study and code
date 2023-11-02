@@ -1,0 +1,827 @@
+////
+////#include<cstdio>
+////#include<iostream>
+////#include<map>
+////using namespace std;
+////map<int, string>mp;
+////int main() {
+////	mp[0] = "ling";
+////	mp[1] = "yi";
+////	mp[2] = "er";
+////	mp[3] = "san";
+////	mp[4] = "si";
+////	mp[5] = "wu";
+////	mp[6] = "liu";
+////	mp[7] = "qi";
+////	mp[8] = "ba";
+////	mp[9] = "jiu";
+////	mp[10] = "fu";
+////	string n; cin >> n;
+////	for (int i = 0; i < n.size(); ++i) {
+////		if (n[i] == '-') cout << mp[10];
+////		else cout << mp[n[i] - '0'];
+////		printf("%c", i == n.size() - 1 ? 0 : ' ');
+////	}
+////	return 0;
+////}
+//#include<stdio.h>
+//#pragma warning (disable:4996 )
+//#include <stdbool.h>
+//int main()
+//{
+//	//continue2:
+//	/*while (0);*/
+//	int  a[4]; float M;
+//	bool k; short rank;
+//	 float sum ;
+//
+//
+////**********************
+//
+//	while (scanf("%d %d %d %d %f %d %d", &a[0], &a[1], &a[2], &a[3], &M, &k, &rank) != EOF)
+//	
+//	{
+//		sum = 0;
+//	
+////**********************
+//	
+//
+//		for (int j = 0; j < 4; j++)
+//		{
+//			if (a[j] != 0)
+//				sum = sum + M / a[j];
+//			if (a[j]==0)
+//				sum=sum;
+//		}
+//	
+//	switch (rank)
+//	{
+//	case 1:sum = sum + 5; break;
+//	case 2:sum = sum + 3; break;
+//	case 3:sum = sum + 1; break;
+//	default:break;
+//	}
+//if (k)
+//		sum = sum + 5;
+//
+//	printf("%.2f\n",sum);
+//	
+//}
+//	return 0;
+//}
+#include<stdio.h>
+#include<math.h>
+#include<stdlib.h>
+#pragma warning (disable:4996 )
+//#define HUN 100
+//#define FIFTY 50
+//#define TEN 10
+//#define FIVE 5
+//#define ONE 1
+//int main()
+//{
+//	int T;
+//	scanf("%d",&T);
+//	for (int j = 0; j < T; j++)
+//	{
+//		int QWER;
+//		scanf("%d",&QWER);
+//		int CHANGE1 = QWER / 100;
+//		int num = 0;
+//		num = 0 + CHANGE1;
+//
+//		QWER = QWER - 100 * CHANGE1;
+//		int CHANGE2 = QWER / 50;
+//		
+//		num = num + CHANGE2;
+//
+//		QWER = QWER - 50 * CHANGE2;
+//		int CHANGE3 = QWER / 10;
+//		
+//		num =num+ CHANGE3;
+//
+//		QWER = QWER - 10 * CHANGE3;
+//		int CHANGE4 = QWER / 5;
+//		
+//		num = num+CHANGE4;
+//
+//		QWER = QWER - 5 * CHANGE4;
+//		num = num + QWER;
+//		printf("%d\n",num);
+//	}
+//
+//	return 0;
+//}
+
+//int main()
+//{
+//	int n = 0; float sum = 0;
+//	while (scanf("%d",&n)!=EOF)
+//	{
+//		sum = 0; float AN = 0;
+//		for (int j = 1; j <= n; j++)
+//		{
+//			AN =( pow(-1, j+1)*(1.0/(2.0*(float)j-1.0)));
+//				sum +=  AN;
+//			
+//		}
+//		printf("%.5f\n",sum);
+//	}
+//	return 0;
+//}
+
+//指数运算
+
+//int main()
+//{
+//	int n = 0; int sum;
+//	while (scanf("%d", &n) != EOF)
+//	{
+//		sum = 0;
+//		for (int j = 0; j < n; j++)
+//		{
+//			int t = 0;
+//			scanf("%d", &t);
+//			if (t % 2 != 0)
+//				sum += t;
+//
+//		}
+//		printf("%d\n",sum);
+//	}
+//
+//
+//}
+
+//OJ OF E
+
+//int main()
+//{
+//	int n; long long sum1, sum2; float sum3;//1--2plus   2--pow  3--1/N
+//	while (scanf("%d",&n)!=EOF)
+//	{
+//		sum1 = 0; sum2 = 0; sum3 = 0;
+//		for (int j = 1; j <= n; j++)
+//		{
+//			int t = 0;
+//			scanf("%d", &t);
+//			if (t % 2 == 0)
+//				sum1 += t; if (t % 2 == 0)
+//			sum2 += pow(t, 2); if (t % 2 == 0)
+//			sum3 += 1.0 / (float)t;
+//
+//
+//		}
+//		printf("%d %d %.2f\n",sum1,sum2,sum3);
+//
+//	}
+//
+//
+//	return 0;
+//}
+
+//oj OF F
+
+//int main()
+//{
+//	int a; int b; int Y; int m = 0;;
+//	int loneNUM[1002];
+//	for (int j = 0; j < 1001; j++)
+//		loneNUM[j] = j;
+//	scanf("%d%d", &a, &b);
+//	int i = a;
+//	for (;i<=b;i++)
+//	{
+//		if (loneNUM[i] == 1)
+//		{
+//			printf("1\n");
+//			
+//		}
+//
+//		
+//		
+//			
+//			if (loneNUM[i] >= 2)
+//			{
+//				for (Y = 2; Y <= 1000; Y++) 
+//			{
+//				
+//					if (loneNUM[i] % Y == 0&&Y!=loneNUM[i])
+//						goto pass;
+//					else continue;
+//			 
+//			}
+//
+//					printf("%d\n", loneNUM[i]);
+//			}
+//
+//				
+//					
+//					
+//				
+//			
+//			
+//		
+//		pass:Y = 0;
+//	}
+//
+//	return 0;
+//
+//}
+
+//打印素数
+
+//
+//
+//#define SSS 300
+//#define SS 100
+//#define S 50
+//int main()
+//{
+//
+//
+//	//*****************************
+//	//Liittle
+//	//*****************************
+//
+//	int T;
+//	scanf("%d", &T);
+//
+//	int a, b, c;
+//	int Combo, SCORE[2] = {0,0};
+//	for (int j = 0; j < T; j++)
+//	{
+//		SCORE[0] = 0;
+//		a = b = c = 0;
+//		scanf("%d%d%d", &a, &b, &c);
+//		Combo = a + b + c;
+//
+//		for (int c1 = 1; c1 <= a; c1++)
+//		{
+//
+//			SCORE[0] += SSS * ((c1 - 1) * 2 + 1);
+//
+//		}
+//		for (int c2 = 1; c2 <= b; c2++)
+//		{
+//			SCORE[0] += SS * ((a + c2 - 1) * 2 + 1);
+//		}
+//
+//
+//
+//
+//		for (int c3 = 1; c3 <= c; c3++)
+//		{
+//			SCORE[0] += S * ((a + b + c3 - 1) * 2 + 1);
+//		}
+//		printf("%d ", SCORE[0]);
+//		SCORE[1] = 0;
+//		
+//		
+//		
+//
+//		for (int c4 = 1; c4 <= c; c4++)
+//		{
+//
+//			SCORE[1] += S * ((c4 - 1) * 2 + 1);
+//
+//		}
+//		for (int c5 = 1; c5 <= b; c5++)
+//		{
+//			SCORE[1] += SS * ((c + c5 - 1) * 2 + 1);
+//		}
+//
+//
+//
+//
+//		for (int c6 = 1; c6 <= a; c6++)
+//		{
+//			SCORE[1] += SSS * ((c + b + c6 - 1) * 2 + 1);
+//		}
+//		printf("%d\n", SCORE[1]);
+//	
+//	}
+//	//*****************************
+//
+//
+//	//*****************************
+//	//MAX
+//	//*****************************
+//
+//
+//
+//}
+//
+
+
+//节奏大师 H
+
+//int main()
+//{
+//	int N;
+//	while (scanf("%d", &N) != EOF)
+//	{
+//
+//		if (N / 100 != 0)
+//		{
+//			printf("%drd", N);
+//			goto case1;
+//		}
+//		else
+//		{
+//			printf("%dss", N);
+//
+//			goto case2;
+//		}
+//	case1:
+//		//N>100
+//
+//		int N2 = 0;
+//		N2 = N - 100 * (N / 100);
+//		if (N == N2) 
+//		{ 
+//			printf("ssss\n");
+//			continue;
+//		}
+//		if (N2 / 10 == 9 || N2 / 10 == 5 || N2 / 10 == 1)
+//
+//			printf("nd");
+//
+//		else 
+//			printf("ss");
+//		
+//
+//
+//
+//
+//		if (N2 < 10)//十位数为0
+//		{
+//
+//			if (N2 == 3 || N2 == 7 || N2 == 2)
+//
+//				printf("st\n");
+//			else
+//				printf("ss\n");
+//
+//		}
+//		if (N2 >= 10)
+//		{
+//			int j = 0;
+//			j = N2 - 10*(N2 / 10);
+//
+//			//if (j == 1 || j == 5 || j == 9)
+//			//	printf("nd");
+//			//else
+//			//	printf("ss");//打印十位
+//			if (j == 3 || j == 7 || j == 2)
+//
+//				printf("st\n");
+//			else
+//				printf("ss\n");
+//
+//
+//			
+//
+//		}
+//
+//continue;
+//
+//	case2://N<100
+//
+//
+//		if (N / 10 == 9 || N / 10 == 5 || N / 10 == 9)
+//		{
+//
+//			printf("nd");
+//
+//		}
+//		else if (N / 10 != 0)
+//		{
+//	
+//		printf("ss");
+//
+//		
+//
+//		}
+//
+//		else//十位数为0
+//		{
+//			printf("ss");
+//			if (N == 3 || N == 7 || N == 2)
+//			{
+//				printf("st\n");
+//				continue;
+//			}
+//			else
+//			{
+//			
+//				printf("ss\n");
+//			continue;
+//			}
+//			
+//		}
+//		N = N - 10 * (N % 10);
+//		if (N == 3 || N == 7 || N == 2)
+//
+//			printf("st\n");
+//		else
+//			printf("ss\n");
+//
+//
+//		
+//
+//
+//
+//	}
+//	
+//	return 0;
+//
+//}
+
+//奇怪序数
+
+
+//int main()
+//{
+//	int VUL, D;
+//	while (scanf("%d %d",&VUL,&D) != EOF)
+//	{
+//		int time = 0;
+//		int turn = 1;
+//		int m = 0;
+//		NEXT:
+//		for ( m = 1; m <= turn; m++)
+//		{
+//			VUL=VUL - D;
+//			time++;
+//			if (VUL > 0)
+//				continue;
+//				
+//			else 
+//				goto end;
+//		}
+//		turn++; time++;
+//		goto NEXT;
+//
+//		end:
+//		
+//		
+//
+//
+//		printf("%d\n", time);
+//	
+//	}
+//
+//
+//
+//	return 0;
+//
+//}
+
+//吊盐水
+
+
+//int main()
+//{
+//	
+//	char b;int i = 0;
+//	int n; int j = 1; int y = 0;
+//	while (scanf(" %c", &b) != '@' && scanf("%d", &n) != EOF)
+//	{
+//		if (b == '@')
+//		{ 
+//			printf("\b");
+//			break;
+//
+//		}
+//		
+//		 j = 1; y = 0; 
+//		for ( ; j <= n; j++)//n flows
+//		{
+//			i = 0; 
+////EMPTY
+//			for (; i < n-j; i++)
+//			{
+//				printf(" ");
+//			}
+//
+//			//CHAR
+////**************************************
+//			if (j == 1 || j == n)
+//			{
+//				if (j == 1)
+//				{
+//				printf("%c\n", b);
+//				if (n == 1)printf("\n");
+//				}
+//				else
+//					for (int kl = 0; kl <= (2 * n)-2 ; kl++)
+//					{
+//						printf("%c", b);
+//						if (kl == (2 * n)-2 ) printf("\n\n");
+//					}
+//
+//			}
+////**************************************
+//
+//			else
+//			{
+//				printf("%c",b);
+//
+//				for (y=0; y < 2 * j - 3; y++)
+//				{
+//					printf(" ");
+//				
+//				}
+//
+//
+//
+//				printf("%c\n", b);
+//
+//			} 
+//
+//
+//
+////**************************************
+//
+//
+//		}
+//		
+//	}
+//	
+//
+//
+//
+//	return 0;
+//}
+// 
+
+//倒三角
+
+//int main()
+//{
+//	int Y, M, D;
+//	scanf("%d %d %d", &Y, &M, &D);
+//	if (Y % 100 == 0 && Y % 400 != 0)
+//	{
+//		
+//
+//					
+//		if (M == 1 || M == 3 || M == 5 || M == 7 || M == 8 || M == 10 || M == 12)
+//		{
+//			if (D == 31 && M != 12)
+//			{
+//			M++; D = 1;
+//			}
+//			else if (D == 31 && M == 12)
+//			{
+//				M = 1; D = 1; Y++;
+//			}
+//			else D++;
+//		}
+//		else if (M != 2)
+//		{
+//			if (D = 30)
+//			{
+//				M++; D = 1;
+//			}
+//			else D++;
+//		
+//		
+//		}
+//		else 
+//		{
+//			if (D == 28)
+//			{
+//				M++; D = 1;
+//			}
+//			else D++;
+//		
+//		}
+//
+//		
+//	}
+//	if (Y % 100 == 0 && Y % 400 == 0)
+//	{
+//		if (M == 1 || M == 3 || M == 5 || M == 7 || M == 8 || M == 10 || M == 12)
+//		{
+//			if (D == 31 && M != 12)
+//			{
+//				M++; D = 1;
+//			}
+//			else if (D == 31 && M == 12)
+//			{
+//				M = 1; D = 1; Y++;
+//			}
+//			else D++;
+//		}
+//		else if (M != 2)
+//		{
+//			if (D == 30)
+//			{
+//				M++; D = 1;
+//			}
+//			else D++;
+//
+//
+//		}
+//		else
+//		{
+//			if (D == 29)
+//			{
+//				M++; D = 1;
+//			}
+//			else D++;
+//
+//		}
+//		
+//	}
+//		if (Y % 100 != 0 && Y % 4 == 0)
+//		{
+//			if (M == 1 || M == 3 || M == 5 || M == 7 || M == 8 || M == 10 || M == 12)
+//			{
+//				if (D == 31 && M != 12)
+//				{
+//					M++; D = 1;
+//				}
+//				else if (D == 31 && M == 12)
+//				{
+//					M = 1; D = 1; Y++;
+//				}
+//				else D++;
+//			}
+//			else if (M != 2)
+//			{
+//				if (D == 30)
+//				{
+//					M++; D = 1;
+//				}
+//				else D++;
+//
+//
+//			}
+//			else
+//			{
+//				if (D == 29)
+//				{
+//					M++; D = 1;
+//				}
+//				else D++;
+//
+//			}
+//		}
+//
+//		if ( Y % 4 != 0)
+//		{
+//			if (M == 1 || M == 3 || M == 5 || M == 7 || M == 8 || M == 10 || M == 12)
+//			{
+//				if (D == 31 && M != 12)
+//				{
+//					M++; D = 1;
+//				}
+//				else if (D == 31 && M == 12)
+//				{
+//					M = 1; D = 1; Y++;
+//				}
+//				else D++;
+//			}
+//			else if (M != 2)
+//			{
+//				if (D ==30)
+//				{
+//					M++; D = 1;
+//				}
+//				else D++;
+//
+//
+//			}
+//			else
+//			{
+//				if (D == 28)
+//				{
+//					M++; D = 1;
+//				}
+//				else D++;
+//
+//			}
+//		}
+//printf("%d %d %d",Y,M,D);
+//return 0;
+//}
+
+//计算日期
+
+//int main()
+//{ 
+//	int a[99] = {0}; int sum = 0;
+//	for (int i = 1; i <= 100; i++)
+//
+//	{
+//		a[i-1] = i ;
+//		if (a[i-1] % 2 == 0)
+//			sum += a[i-1];
+//		
+//	}printf("%d",sum);
+//return;
+//}
+
+//N
+
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d",&n);int k[100];
+//	for (int j = 0; j < n; j++)
+//		
+//	{
+//		scanf("%d",&k[j]);
+//		/*printf("%d\n",k[j]);*/
+//	}
+//	
+//	float aver = 0;
+//	int min = 0;
+//	
+//	min = k[0];
+//	int max1 = k[0]; int sum = 0;
+//	for ( int x = n-1; x >= 0; x--)
+//	{
+//			
+//		
+//		if (min >= k[x])
+//			min = k[x]; 
+//		if (max1 <= k[x])
+//			max1 = k[x];
+//		sum = sum+  k[x];
+//		
+//	}
+//	aver = (float)sum / (float)n;
+//	printf("%d %d %.1f", max1, min, aver);
+//	return 0;
+//}
+
+//p
+
+//int main()
+//{
+//	printf("1*1=1\n"); printf("2*1=2 2*2=4\n"); printf("3*1=3 3*2=6 3*3=9\n");
+//	printf("4*1=4 4*2=8 4*3=12 4*4=16\n");
+//	printf("5*1=5 5*2=10 5*3=15 5*4=20 5*5=25\n");
+//	printf("6*1=6 6*2=12 6*3=18 6*4=24 6*5=30 6*7=42\n");
+//	printf("7*1=7 7*2=14 7*3=21 7*4=28 7*5=35 7*6=42 7*7=49\n");
+//	printf("8*1=8 8*2=16 8*3=24 8*4=32 8*5=40 8*6=48 8*7=56 8*8=64\n");
+//	printf("9*1=9 9*2=18 9*3=27 9*4=36 9*5=45 9*6=54 9*7=63 9*8=72 9*9=81");
+//	return 0;
+//}
+
+//volience.....
+
+//int main()
+//
+//{
+//	int a, b, c, d;
+//	a = b = 1;
+//	for (c=1;c<=9;c++)//line
+//	{
+//		
+//		for (d = 1; d <= c; d++)//row
+//		{
+//			
+//		printf("%d*%d=%d", c, d, c * d);
+//		if (d!=c)
+//		printf(" ");
+//		}
+//
+//if(c!=9)
+//printf("\n");
+//	}
+//	
+//
+//}
+
+//jiu jiu cheng fa biao
+
+
+//int main()
+//{
+//	int n = 0;
+//	int m = 0;
+//	scanf("%d", &n);
+//		while (n!=1)
+//		
+//		{
+//			if (n % 2 == 0)
+//			{
+//				n = n / 2; m++;
+//			continue;
+//			}
+//			if (n % 2 != 0) 
+//			{
+//			n = 3 * n + 1; m++;
+//			continue;
+//			}
+//		}
+//printf("%d", m);
+//return 0;
+//}
+//
+
+//Q
