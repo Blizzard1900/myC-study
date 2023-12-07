@@ -1,0 +1,57 @@
+
+//#include <stdio.h>
+//#include <string.h>
+//int mian()
+//{
+//	char Q[300] = {0};
+//	gets(Q);
+//	for (int i = 0; Q[i] != '\0'; i++)
+//	{
+//		if (Q[i] == 'Q' || Q[i] == 'q') {
+//			for (int k = 0; Q[k] != ' '; k++ ) printf("%c", Q[k]);
+//			printf("\n");
+//		}
+//
+//	}
+//
+//
+//	return 0;
+//}
+//#include <stdio.h>
+//#include <string.h>
+//
+//int main() {
+//    char Q[300] = { 0 };
+//    fgets(Q, sizeof(Q), stdin);  // Use fgets instead of gets to avoid buffer overflow issues
+//
+//    for (int i = 0; Q[i] != '\0'; i++) {
+//        if (Q[i] == 'Q' || Q[i] == 'q') {
+//            for (int k = 0; Q[k] != ' ' && Q[k] != '\0'; k++) {
+//                printf("%c", Q[k]);
+//            }
+//            printf("\n");
+//        }
+//    }
+//
+//    return 0;
+//}
+
+//改错后
+#include <stdio.h>
+#include <string.h>
+#pragma warning(disable:4996)
+int main() {
+    char Q[300] = { 0 };
+    fgets(Q, sizeof(Q), stdin);
+
+    char* token = strtok(Q, " ");  // Use strtok to tokenize the input string
+
+    while (token != NULL) {
+        if (token[0] == 'Q' || token[0] == 'q') {
+            printf("%s\n", token);
+        }
+        token = strtok(NULL, " ");
+    }
+
+    return 0;
+}
